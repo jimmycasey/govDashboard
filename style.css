@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.sidebar{
+/* .sidebar{
   position: fixed;
   height: 100%;
   width: 240px;
@@ -83,8 +83,8 @@
 .sidebar.active ~ .home-section{
   width: calc(100% - 60px);
   left: 60px;
-}
-.home-section nav{
+} */
+/* .home-section nav{
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -96,10 +96,10 @@
   left: 240px;
   z-index: 100;
   padding: 0 20px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0 0, 0, 0.1);
   transition: all 0.5s ease;
-}
-.sidebar.active ~ .home-section nav{
+} */
+/* .sidebar.active ~ .home-section nav{
   left: 60px;
   width: calc(100% - 60px);
 }
@@ -112,8 +112,8 @@
 nav .sidebar-button i{
   font-size: 35px;
   margin-right: 10px;
-}
-.home-section nav .search-box{
+} */
+/* .home-section nav .search-box{
   position: relative;
   height: 50px;
   max-width: 550px;
@@ -143,9 +143,9 @@ nav .search-box .bx-search{
   text-align: center;
   color: #fff;
   font-size: 22px;
-  transition: all 0.4 ease;
-}
-.home-section nav .profile-details{
+  transition: all 0.4 ease; 
+}*/
+/* .home-section nav .profile-details{
   display: flex;
   align-items: center;
   background: #F5F6FA;
@@ -171,10 +171,10 @@ nav .profile-details .admin_name{
 nav .profile-details i{
   font-size: 25px;
   color: #333;
-}
+} */
 .home-section .home-content{
   position: relative;
-  padding-top: 104px;
+  padding-top: 10px;
 }
 .home-content .overview-boxes{
   display: flex;
@@ -182,7 +182,7 @@ nav .profile-details i{
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 20px;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
 }
 .overview-boxes .box{
   display: flex;
@@ -192,6 +192,7 @@ nav .profile-details i{
   background: #fff;
   padding: 15px 14px;
   border-radius: 12px;
+  border: 2px solid #EFEEF1;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 .overview-boxes .box-topic{
@@ -225,7 +226,7 @@ nav .profile-details i{
 .home-content .box .indicator .text{
   font-size: 12px;
 }
-.home-content .box .cart{
+.home-content .box .house{
   display: inline-block;
   font-size: 32px;
   height: 50px;
