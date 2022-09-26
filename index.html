@@ -54,16 +54,34 @@
 
 <script>
   let stats = {
-    "homeless": "10,568",
-    "houses_built": "26,000",
-    "derelict_vacant": "110,000",
-    "rent_subsidies": "1,220,000,000"
+    "homes" : {
+      "homeless": {
+        "value": "10,568",
+        "link" : "https://www.independent.ie/news/number-of-homeless-people-in-ireland-hits-high-of-10568-41939833.html",
+        "date": "26th Aug 2002"
+      },
+      "houses_built": {
+        "value" : "26,000",
+        "link" : "https://businessplus.ie/news/construction-of-homes-target/",
+        "date": "8th Sept 2022"
+      },
+      "derelict_vacant": {
+        "value" : "110,000",
+        "link" : "https://www.irishmirror.ie/news/irish-news/new-tax-come-data-shows-27415606",
+        "date": "6th July 2022"
+      },
+      "rent_subsidies": {
+        "value" : "1,220,000,000",
+        "link": "https://www.irishexaminer.com/news/arid-40888892.html",
+        "date": "6th June 2022"
+      } 
+    }
   }
 
-  document.getElementById("houses_built").innerHTML = stats.houses_built;
-  document.getElementById("homeless").innerHTML = stats.homeless;
-  document.getElementById("derelict_vacant").innerHTML = stats.derelict_vacant;
-  document.getElementById("rent_subsidies").innerHTML = stats.rent_subsidies;
+  document.getElementById("houses_built").innerHTML = "<a href=" + stats.homes.houses_built.link + ">" + stats.homes.houses_built.value + "</a>";
+  document.getElementById("homeless").innerHTML = "<a href=" + stats.homes.homeless.link + ">" + stats.homes.homeless.value + "</a>";
+  document.getElementById("derelict_vacant").innerHTML = "<a href=" + stats.homes.derelict_vacant.link + ">" + stats.homes.derelict_vacant.value + "</a>";
+  document.getElementById("rent_subsidies").innerHTML = "<a href=" + stats.homes.rent_subsidies.link + ">" + stats.homes.rent_subsidies.value + "</a>";
 </script>
 
 </html>

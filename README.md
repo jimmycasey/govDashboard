@@ -2,17 +2,13 @@
 
 ## Government Dashboard was created to track the metrics that matter to people in Ireland.
 
+https://jimmycasey.github.io/govDashboard/#
+
 ### Contributing
 
-To update a metric or add a new metric:
-- Fork the repo.
-- Make the updates.
-- Add a link to the source in References below.
-- Create a Pull Request.
+To update a metric or add a new metric, edit the json at the bottom of index.html by following the guide below:
+- https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-another-users-repository
 
-### References
 
-- 1.22B, 6th June 2022, https://www.irishexaminer.com/news/arid-40888892.html
-- 26,000, 8th Sept 2022, https://businessplus.ie/news/construction-of-homes-target/
-- 10,568, 26th Aug 2002, https://www.independent.ie/news/number-of-homeless-people-in-ireland-hits-high-of-10568-41939833.html
-- 110,000, 6th July 2022, https://www.irishmirror.ie/news/irish-news/new-tax-come-data-shows-27415606
+### Thanks
+- https://www.codinglabweb.com/2021/05/admin-dashboard-in-html-css.html
