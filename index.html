@@ -90,6 +90,46 @@
     </div>
   </section>
 
+  <section class="home-section">
+    <div class="home-content">
+      <div class="overview-boxes">
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">HSE Waiting List</div>
+            <div class="number" id="waiting_list"></div>
+          </div>
+          <i class='bx bx-first-aid health'></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Quality of Life Ranking</div>
+            <div class="number" id="quality_of_life_rank"></div>
+          </div>
+          <i class='bx bxs-bar-chart-alt-2 health' ></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Male Life Expectency</div>
+            <div class="number" id="male_life_expectency"></div>
+          </div>
+          <i class='bx bx-donate-heart health'></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Female Life Expectency</div>
+            <div class="number" id=female_life_expectency></div>
+          </div>
+          <i class='bx bxs-donate-heart health'></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 </body>
 
 <script>
@@ -141,7 +181,29 @@
         "link": "https://www.livingwage.ie/",
         "date": "1st Jan 2022"
       },
-    }
+    },
+    "health": {
+      "waiting_list": {
+        "value": "629,447",
+        "link": "https://www.independent.ie/irish-news/as-waiting-lists-hit-record-highs-more-than-40000-hospital-outpatients-are-no-shows-each-month-42013730.html",
+        "date": "24th Sept 2022"
+      },
+      "quality_of_life_rank": {
+        "value": "8",
+        "link": "https://www.irishtimes.com/life-style/2022/09/10/irelands-quality-of-life-how-do-we-score-in-the-uns-new-rankings/",
+        "date": "10th Sept 2022"
+      },
+      "male_life_expectency": {
+        "value": "78.4",
+        "link": "https://www.cso.ie/en/interactivezone/statisticsexplained/birthsdeathsandmarriages/lifeexpectancytables/",
+        "date": "1st Jan 2022"
+      },
+      "female_life_expectency": {
+        "value": "82.8",
+        "link": "https://www.cso.ie/en/interactivezone/statisticsexplained/birthsdeathsandmarriages/lifeexpectancytables/",
+        "date": "1st Jan 2022"
+      },
+    },
   }
   // ***********************************************************************************************************************
 
@@ -154,6 +216,12 @@
   document.getElementById("average_industry").innerHTML = "<a href=" + stats.wages.average_industrial_wage.link + ">" + stats.wages.average_industrial_wage.value + "</a>";
   document.getElementById("living_wage").innerHTML = "<a href=" + stats.wages.living_wage.link + ">" + stats.wages.living_wage.value + "</a>";
   document.getElementById("minimum_wage").innerHTML = "<a href=" + stats.wages.minimum_wage.link + ">" + stats.wages.minimum_wage.value + "</a>";
+
+  document.getElementById("waiting_list").innerHTML = "<a href=" + stats.health.waiting_list.link + ">" + stats.health.waiting_list.value + "</a>";
+  document.getElementById("quality_of_life_rank").innerHTML = "<a href=" + stats.health.quality_of_life_rank.link + ">" + stats.health.quality_of_life_rank.value + "</a>";
+  document.getElementById("male_life_expectency").innerHTML = "<a href=" + stats.health.male_life_expectency.link + ">" + stats.health.male_life_expectency.value + "</a>";
+  document.getElementById("female_life_expectency").innerHTML = "<a href=" + stats.health.female_life_expectency.link + ">" + stats.health.female_life_expectency.value + "</a>";
+
 </script>
 
 <div class="footer">To add/update visit: <a href="https://github.com/jimmycasey/govDashboard">govDashboard</a></div>

@@ -60,7 +60,20 @@
   background: #f3a006;
   line-height: 50px;
   text-align: center;
-  color: #f0ff66;
+  color: #ffee06;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+
+.home-content .box .health{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #ebeee1;
+  line-height: 50px;
+  text-align: center;
+  color: #fc450e;
   border-radius: 12px;
   margin: -15px 0 0 6px;
 }
