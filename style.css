@@ -154,7 +154,7 @@ h1 {
   margin-left: 0.5em;
   margin-right: 0;
   font-weight: bold;
-  background: #cce5ff;
+  background-color: #cce5ff;
 }
 
 h2 {
@@ -175,5 +175,5 @@ h2 {
   color: black;
   text-align: center;
   font-size: 0.75em;
-  background: #cce5ff;
+  background-color: #cce5ff;
 }
