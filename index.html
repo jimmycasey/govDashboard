@@ -50,46 +50,113 @@
     </div>
   </section>
 
+  <section class="home-section">
+    <div class="home-content">
+      <div class="overview-boxes">
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Average Base TD Hourly wage</div>
+            <div class="number" id="average_td"></div>
+          </div>
+          <i class='bx bx-euro euro'></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Average Industrial Hourly Wage</div>
+            <div class="number" id="average_industry"></div>
+          </div>
+          <i class='bx bx-euro euro'></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Living Hourly Wage </div>
+            <div class="number" id="living_wage"></div>
+          </div>
+          <i class='bx bx-euro euro'></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Minimum Hourly Wage</div>
+            <div class="number" id=minimum_wage></div>
+          </div>
+          <i class='bx bx-euro euro'></i>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
 </body>
 
 <script>
 
-// ***********************************************************************************************************************
-// Edit the stats object below with new value, link, and date
-// ***********************************************************************************************************************
+  // ***********************************************************************************************************************
+  // Edit the stats object below with new value, link, and date
+  // ***********************************************************************************************************************
   let stats = {
-    "homes" : {
+    "homes": {
       "homeless": {
         "value": "10,568",
-        "link" : "https://www.independent.ie/news/number-of-homeless-people-in-ireland-hits-high-of-10568-41939833.html",
+        "link": "https://www.independent.ie/news/number-of-homeless-people-in-ireland-hits-high-of-10568-41939833.html",
         "date": "26th Aug 2002"
       },
       "houses_built": {
-        "value" : "26,000",
-        "link" : "https://businessplus.ie/news/construction-of-homes-target/",
+        "value": "26,000",
+        "link": "https://businessplus.ie/news/construction-of-homes-target/",
         "date": "8th Sept 2022"
       },
       "derelict_vacant": {
-        "value" : "110,000",
-        "link" : "https://www.irishmirror.ie/news/irish-news/new-tax-come-data-shows-27415606",
+        "value": "110,000",
+        "link": "https://www.irishmirror.ie/news/irish-news/new-tax-come-data-shows-27415606",
         "date": "6th July 2022"
       },
       "rent_subsidies": {
-        "value" : "1,220,000,000",
+        "value": "1,220,000,000",
         "link": "https://www.irishexaminer.com/news/arid-40888892.html",
         "date": "6th June 2022"
-      } 
+      }
+    },
+    "wages": {
+      "average_industrial_wage": {
+        "value": "22.35",
+        "link": "https://www.cso.ie/en/statistics/earnings/earningsandlabourcosts/",
+        "date": "30th June 2022"
+      },
+      "average_td_wage": {
+        "value": "49.90",
+        "link": "https://www.oireachtas.ie/en/members/salaries-and-allowances/salaries/",
+        "date": "31st May 2022"
+      },
+      "minimum_wage": {
+        "value": "10.50",
+        "link": "https://www.citizensinformation.ie/en/employment/employment_rights_and_conditions/pay_and_employment/pay_inc_min_wage.html",
+        "date": "15th Sept 2022"
+      },
+      "living_wage": {
+        "value": "12.90",
+        "link": "htts://www.livingwage.ie/",
+        "date": "1st Jan 2022"
+      },
     }
   }
-// ***********************************************************************************************************************
+  // ***********************************************************************************************************************
 
   document.getElementById("houses_built").innerHTML = "<a href=" + stats.homes.houses_built.link + ">" + stats.homes.houses_built.value + "</a>";
   document.getElementById("homeless").innerHTML = "<a href=" + stats.homes.homeless.link + ">" + stats.homes.homeless.value + "</a>";
   document.getElementById("derelict_vacant").innerHTML = "<a href=" + stats.homes.derelict_vacant.link + ">" + stats.homes.derelict_vacant.value + "</a>";
   document.getElementById("rent_subsidies").innerHTML = "<a href=" + stats.homes.rent_subsidies.link + ">" + stats.homes.rent_subsidies.value + "</a>";
+
+  document.getElementById("average_td").innerHTML = "<a href=" + stats.wages.average_td_wage.link + ">" + stats.wages.average_td_wage.value + "</a>";
+  document.getElementById("average_industry").innerHTML = "<a href=" + stats.wages.average_industrial_wage.link + ">" + stats.wages.average_industrial_wage.value + "</a>";
+  document.getElementById("living_wage").innerHTML = "<a href=" + stats.wages.living_wage.link + ">" + stats.wages.living_wage.value + "</a>";
+  document.getElementById("minimum_wage").innerHTML = "<a href=" + stats.wages.minimum_wage.link + ">" + stats.wages.minimum_wage.value + "</a>";
 </script>
 
 <div class="footer">To add/update visit: <a href="https://github.com/jimmycasey/govDashboard">govDashboard</a></div>
 
 </html>
-
