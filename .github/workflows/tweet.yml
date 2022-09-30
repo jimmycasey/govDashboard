@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Tweet-trigger-publish-release
-        uses: mugi111/tweet-trigger-release@v1.1
+        uses: mugi111/tweet-trigger-release@v1.2
         with:
           consumer_key: ${{ secrets.CONSUMER_KEY }}
           consumer_secret: ${{ secrets.CONSUMER_SECRET }}
