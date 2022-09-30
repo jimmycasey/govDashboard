@@ -40,3 +40,20 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+      - name: Tweet-trigger-publish-release
+        uses: mugi111/tweet-trigger-release@v1.2
+        with:
+          consumer_key: ${{ secrets.CONSUMER_KEY }}
+          consumer_secret: ${{ secrets.CONSUMER_SECRET }}
+          access_token_key: ${{ secrets.ACCESS_TOKEN_KEY }}
+          access_token_secret: ${{ secrets.ACCESS_TOKEN_SECRET }}
+          tweet_body: ${{ github.event.head_commit.message }}
+      - name: Twitter Action
+        uses: xorilog/twitter-action@0.1 -message
+          with:
+            TWITTER_CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+            TWITTER_CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+            TWITTER_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN_KEY }}
+            TWITTER_ACCESS_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+          args: ${{ github.event.head_commit.message }}
+
