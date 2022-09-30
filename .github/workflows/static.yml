@@ -49,7 +49,7 @@ jobs:
           access_token_secret: ${{ secrets.ACCESS_TOKEN_SECRET }}
           tweet_body: ${{ github.event.head_commit.message }}
       - name: Twitter Action
-        uses: xorilog/twitter-action@0.1
+        uses: thomasjpfan/twitter-action
         with:
           TWITTER_CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
           TWITTER_CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
