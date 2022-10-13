@@ -23,7 +23,7 @@ Or propose an update by creating a new issue here: https://github.com/jimmycasey
 
 ### Under the Hood
 
-- Build from static HTML, deployed using GitHub Actions and hosted in GitHub Pages.
+- Built from static HTML, deployed using GitHub Actions and hosted in GitHub Pages.
 - Tweets on every merge to main with "send-tweet-action" Github Action using the commit message as the tweet status.
 
 ### Thanks

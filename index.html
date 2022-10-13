@@ -134,6 +134,46 @@
   <section class="home-section">
     <div class="home-content">
       <div class="overview-boxes">
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Mother & Baby Home Redress Paid</div>
+            <div class="number" id="mother_and_baby_redress"></div>
+          </div>
+          <i class='bx bx-euro euro'></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Mother & Baby Home Minimum Child Deaths</div>
+            <div class="number" id="deaths"></div>
+          </div>
+          <i class='bx bxs-baby-carriage health'></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Institutional Abuse Redress Cap</div>
+            <div class="number" id="cap"></div>
+          </div>
+          <i class='bx bx-coin-stack coin_green'></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Expected Redress Cost for Tax Payer</div>
+            <div class="number" id=expected></div>
+          </div>
+          <i class='bx bxs-coin-stack coin'></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="home-content">
+      <div class="overview-boxes">
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Add/update a data point on</div>
@@ -144,8 +184,6 @@
       </div>
     </div>
   </section>
-
-</body>
 
 <div class="footer">To update visit: <a href="https://github.com/jimmycasey/govDashboard">GitHub</a> / <a
     href="https://www.buymeacoffee.com/jimmyendless">Buy me a ☕</a> / Made with ❤ by <a
@@ -222,6 +260,28 @@
         "date": "1st Jan 2022"
       },
     },
+    "abuse": {
+      "mother_and_baby_redress": {
+        "value": "0",
+        "link": "https://www.irishexaminer.com/news/arid-40979510.html",
+        "date": "10th Oct 2022"
+      },
+      "deaths": {
+        "value": "9000",
+        "link": "https://www.independent.ie/irish-news/mother-and-baby-homes-report-will-reveal-9000-children-died-in-18-institutions-investigated-39951584.html",
+        "date": "12th January 2021"
+      },
+      "cap": {
+        "value": "127,000,000",
+        "link": "https://www.irishtimes.com/news/woods-defends-his-deal-with-church-on-redress-for-abuse-1.1276752",
+        "date": "8th Jan 2011"
+      },
+      "expected": {
+        "value": "1,300,000,000",
+        "link": "https://www.irishtimes.com/news/woods-defends-his-deal-with-church-on-redress-for-abuse-1.1276752",
+        "date": "8th Jan 2011"
+      }
+    }
   }
   //***********************************************************************************************************************
 
@@ -239,6 +299,11 @@
   document.getElementById("quality_of_life_rank").innerHTML = "<a href=" + stats.health.quality_of_life_rank.link + ">" + stats.health.quality_of_life_rank.value + "</a>";
   document.getElementById("male_life_expectency").innerHTML = "<a href=" + stats.health.male_life_expectency.link + ">" + stats.health.male_life_expectency.value + "</a>";
   document.getElementById("female_life_expectency").innerHTML = "<a href=" + stats.health.female_life_expectency.link + ">" + stats.health.female_life_expectency.value + "</a>";
+
+  document.getElementById("mother_and_baby_redress").innerHTML = "<a href=" + stats.abuse.mother_and_baby_redress.link + ">" + stats.abuse.mother_and_baby_redress.value + "</a>";
+  document.getElementById("deaths").innerHTML = "<a href=" + stats.abuse.deaths.link + ">" + stats.abuse.deaths.value + "</a>";
+  document.getElementById("cap").innerHTML = "<a href=" + stats.abuse.cap.link + ">" + stats.abuse.cap.value + "</a>";
+  document.getElementById("expected").innerHTML = "<a href=" + stats.abuse.expected.link + ">" + stats.abuse.expected.value + "</a>";
 
 </script>
 
