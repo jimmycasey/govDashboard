@@ -33,18 +33,18 @@
 
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Derelict/Vacant Houses</div>
-            <div class="number" id=derelict_vacant></div>
+            <div class="box-topic">New Builds Needed Per Year</div>
+            <div class="number" id="houses_needed"></div>
           </div>
-          <i class='bx bxs-no-entry house'></i>
+          <i class='bx bx-euro house'></i>
         </div>
 
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Spend on Rent Subsidies</div>
-            <div class="number" id="rent_subsidies"></div>
+            <div class="box-topic">Derelict/Vacant Houses</div>
+            <div class="number" id=derelict_vacant></div>
           </div>
-          <i class='bx bx-euro house'></i>
+          <i class='bx bxs-no-entry house'></i>
         </div>
 
       </div>
@@ -210,10 +210,10 @@
         "link": "https://www.irishtimes.com/business/economy/ireland-has-10th-highest-rate-of-vacant-homes-in-the-world-study-finds-1.4709476",
         "date": "25th Oct 2021"
       },
-      "rent_subsidies": {
-        "value": "1,220,000,000",
-        "link": "https://www.irishexaminer.com/news/arid-40888892.html",
-        "date": "6th June 2022"
+      "houses_needed": {
+        "value": "62,000",
+        "link": "https://www.irishtimes.com/ireland/housing-planning/2023/01/26/ireland-needs-almost-double-amount-of-new-builds-in-housing-targets-research-finds/",
+        "date": "26th Jan 2023"
       }
     },
     "wages": {
@@ -288,7 +288,7 @@
   document.getElementById("houses_built").innerHTML = "<a href=" + stats.homes.houses_built.link + ">" + stats.homes.houses_built.value + "</a>";
   document.getElementById("homeless").innerHTML = "<a href=" + stats.homes.homeless.link + ">" + stats.homes.homeless.value + "</a>";
   document.getElementById("derelict_vacant").innerHTML = "<a href=" + stats.homes.derelict_vacant.link + ">" + stats.homes.derelict_vacant.value + "</a>";
-  document.getElementById("rent_subsidies").innerHTML = "<a href=" + stats.homes.rent_subsidies.link + ">" + stats.homes.rent_subsidies.value + "</a>";
+  document.getElementById("houses_needed").innerHTML = "<a href=" + stats.homes.houses_needed.link + ">" + stats.homes.houses_needed.value + "</a>";
 
   document.getElementById("average_td").innerHTML = "<a href=" + stats.wages.average_td_wage.link + ">" + stats.wages.average_td_wage.value + "</a>";
   document.getElementById("average_industry").innerHTML = "<a href=" + stats.wages.average_industrial_wage.link + ">" + stats.wages.average_industrial_wage.value + "</a>";
