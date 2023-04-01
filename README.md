@@ -1,4 +1,4 @@
-# govDashboard
+# govDashboard.ie
 
 ## Government Dashboard was created to track the data that matters to people in Ireland.
 ![](screenshot_dashboard.png)
