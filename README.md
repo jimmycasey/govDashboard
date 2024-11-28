@@ -2,7 +2,7 @@
 
 ## Government Dashboard was created to track the data that matters to people in Ireland.
 ![](screenshot_dashboard.png)
-[govdashboard.ie](https://govdashboard.ie) is a crowdsourced, single source of truth for data points across:
+[govdashboard](https://jimmycasey.github.io/govDashboard/) is a crowdsourced, single source of truth for data points across:
 - Housing
 - Income
 - Health
